@@ -1,16 +1,17 @@
 import "./AboutC.css";
-import AboutC from "./AboutC";
-import AboutCardData from "./AboutData";
-import React from "react";
 
+import React from "react";
+import AboutCardData from "./AboutData";
+
+import AboutCard from "./AboutCard";
 const AboutW = () => {
   return (
-    <div className="work-container">
-      <h1 className="project-heading">Projects</h1>
-      <div className="project-container">
+    <div className="work-containers">
+      <h1 className="project-headings">Projects</h1>
+      <div className="project-containers">
         {AboutCardData.map((val, index) => {
           return (
-            <AboutC
+            <AboutCard
               key={index}
               imgsrc={val.imgsrc}
               title={val.title}

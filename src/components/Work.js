@@ -1,15 +1,17 @@
-import "./Workcard.css";
-import Card from "./Card";
-import ProjectCardData from "./WorkCard";
+import "./WorkCard.css";
+
 import React from "react";
+import WorkCard from "./WorkCard";
+
+import ProjectCardData from "./WorkCardData";
 const Work = () => {
   return (
-    <div className="work-container">
-      <h1 className="project-heading">Projects</h1>
-      <div className="project-container">
+    <div className="work-containers">
+      <h1 className="project-headings">Projects</h1>
+      <div className="project-containers">
         {ProjectCardData.map((val, index) => {
           return (
-            <Card
+            <WorkCard
               key={index}
               imgsrc={val.imgsrc}
               title={val.title}

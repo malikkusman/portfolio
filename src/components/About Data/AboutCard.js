@@ -1,11 +1,11 @@
-import "./WorkCard.css";
+import "./AboutC.css";
 import { NavLink } from "react-router-dom";
 import React from "react";
 
-const WorkCard = (props) => {
+const AboutCard = (props) => {
   return (
     <div className="project-cards">
-      <img src={props.imgsrc} alt="Assets" />
+      <img src={props.imgsrc} alt="assets" />
       <h2 className="project-titles">{props.title}</h2>
       <div className="pro-detail">
         <p>{props.text}</p>
@@ -13,13 +13,10 @@ const WorkCard = (props) => {
           <NavLink to={props.view} className="btn">
             View
           </NavLink>
-          <NavLink to={props.source} className="btn">
-            Source
-          </NavLink>
         </div>
       </div>
     </div>
   );
 };
 
-export default WorkCard;
+export default AboutCard;
